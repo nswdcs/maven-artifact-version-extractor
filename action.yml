@@ -1,0 +1,12 @@
+name: 'Maven Artifact Version Extractor Action'
+description: 'This action extracts an artifact version from pom.xml file'
+branding:
+  icon: anchor
+  color: orange
+inputs:
+  file_path:
+    description: 'The file path of the pom.xml file'
+    required: true
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
