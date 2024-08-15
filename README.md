@@ -50,7 +50,7 @@ jobs:
 
       - name: Extract version from pom.xml file
         id: version-extractor
-        uses: dostonhamrakulov/maven-artifact-version-extractor@v1.0
+        uses: nswdcs/maven-artifact-version-extractor@v1.0.0
         with:
           file_path: ${{ github.workspace }}/pom.xml
       - name: Get the output version
